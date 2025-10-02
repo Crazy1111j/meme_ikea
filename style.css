@@ -1,0 +1,29 @@
+:root {
+  --gradient-start-color: darkblue;
+  --gradient-end-color: blue;
+  --gradient-direction: to bottom right;
+  background: linear-gradient(var(--gradient-direction), var(--gradient-start-color), var(--gradient-end-color));
+  background-attachment: fixed;
+  color: yellow;
+  text-shadow:
+      0 0 5px,
+      0 0 10px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-family: sans-serif;
+  font-style: italic;
+  text-align: center;
+  cursor: all-scroll;
+}
+
+@keyframes cycle {
+  0% {cursor: all-scroll;}
+  25% {cursor: not-allowed;;}
+  50% {cursor: s-resize;}
+  75% {cursor: crosshair;}
+  100% {cursor: w-resize;}
+}
+
+.cycler:hover {
+  animation: cycle 2.5s infinite linear;  
+}
