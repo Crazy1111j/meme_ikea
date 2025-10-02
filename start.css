@@ -1,0 +1,21 @@
+:root {
+  background-image: url("starz.gif");
+  background-color: black;
+  color: white;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-style: italic;
+  text-shadow: 0 0 5px, 0 0 10px;
+  text-align: center;
+  cursor: all-scroll;
+}
+
+@keyframes catz {
+  0% {transform: scale(1.0);}
+  100% {transform: scale(1.10);}
+}
+
+.cat:hover {
+  animation: catz 1s linear;
+  animation-fill-mode: forwards;
+}
